@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Your groups - SplitSmart{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <div><h1 class="h2 mb-1">Your groups</h1><p class="text-muted mb-0">Keep shared costs clear.</p></div>
+  <button class="btn btn-outline-secondary" id="logout-button" type="button">Sign out</button>
+</div>
+<section class="card mb-4"><div class="card-body">
+  <h2 class="h5">Create a group</h2>
+  <form id="group-form" class="d-flex gap-2">
+    <input class="form-control" name="name" placeholder="e.g. Weekend trip" maxlength="120" required>
+    <button class="btn btn-primary text-nowrap" type="submit">Create group</button>
+  </form>
+</div></section>
+<section><h2 class="h5 mb-3">Groups</h2><div id="groups-list" class="row g-3"></div></section>
+{% endblock %}

@@ -1,0 +1,4 @@
+body { min-height: 100vh; }
+.card { border: 0; }
+.balance-positive { color: #198754; }
+.balance-negative { color: #dc3545; }
